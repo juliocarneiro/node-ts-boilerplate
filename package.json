@@ -17,8 +17,9 @@
   "scripts": {
     "start": "tsx src/server.ts",
     "dev": "tsx src/server.ts -w",
-    "build": "tsup src/server.ts",
-    "migrate": "npx prisma migrate dev"
+    "build": "prisma generate && tsup src/server.ts",
+    "migrate": "npx prisma migrate dev",
+    "postinstall": "prisma generate"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
