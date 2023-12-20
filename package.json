@@ -17,16 +17,19 @@
   "scripts": {
     "start": "tsx src/server.ts",
     "dev": "tsx src/server.ts -w",
-    "build": "tsup src/server.ts"
+    "build": "tsup src/server.ts",
+    "migrate": "npx prisma migrate dev"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
     "@types/node": "^20.10.5",
+    "prisma": "^5.7.1",
     "tsup": "^8.0.1",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@prisma/client": "^5.7.1",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "zod": "^3.22.4"

@@ -7,6 +7,7 @@ This project uses lot of stuff as:
 - [TypeScript](https://www.typescriptlang.org/)
 - [Express](https://expressjs.com/pt-br/)
 - [Zod](https://zod.dev/)
+- [Prisma](https://www.prisma.io/)
 
 ## Getting Started
 
